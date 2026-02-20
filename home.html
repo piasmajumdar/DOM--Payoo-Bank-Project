@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- Fontawesome -->
+    <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -84,14 +84,51 @@
         </div>
     </section>
 
+
+    <!-- Add Money -->
+    <section class="add-money w-11/12 mx-auto py-5">
+        <h2 class="text-2xl font-bold mb-5">Add Money</h2>
+
+        <div class="card bg-base-100 w-full rounded-2xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+
+                    <label class="label text-neutral font-bold">Select Bank</label>
+                    <select id="add-money-bank" class="select rounded-full bg-base-200 w-full">
+                        <option disabled selected>Select a Bank</option>
+                        <option value="DBBL">DBBL </option>
+                        <option value="IBBL">IBBL</option>
+                        <option value="CITY">City Bank</option>
+                    </select>
+                    <br>
+
+                    <label class="label text-neutral font-bold">Bank Account Number</label>
+                    <input id="add-money-number" maxlength="11" minlength="11" type="text"
+                        class="input rounded-full bg-base-200 w-full" placeholder="Enter 11 digit account Number" />
+
+                    <br>
+                    <label class="label text-neutral font-bold">Amount to add</label>
+                    <input id="add-money-amount" type="text" class="input rounded-full bg-base-200 w-full"
+                        placeholder="Enter amount to add" />
+
+                    <br>
+                    <label class="label text-neutral font-bold">Pin Number</label>
+                    <input id="add-money-pin" type="password" maxlength="4" class="input bg-base-200 rounded-full w-full"
+                        placeholder="Enter 4 Digit Pin Number" />
+                    <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">Add Money</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
     <!-- Cashout -->
-    <section id="cashohut" class="w-11/12 mx-auto py-5">
+    <section id="cashohut" class="w-11/12 mx-auto py-5 hidden">
         <h2 class="text-2xl font-bold mb-5">Cashout</h2>
         <div class="card bg-base-100 w-full rounded-2xl">
             <div class="card-body">
                 <fieldset class="fieldset">
                     <label class="label text-neutral font-bold">Agent Number</label>
-                    <input id="agent-number" maxlength="11" minlength="11" type="text"
+                    <input id="cashout-number" maxlength="11" minlength="11" type="text"
                         class="input rounded-full bg-base-200 w-full" placeholder="Enter your Agent 11 digit Number" />
 
                     <br>
@@ -109,7 +146,7 @@
         </div>
     </section>
 
-
+    <script src="./script/machine.js"></script>
     <script src="./script/cashout.js"></script>
 </body>
 
