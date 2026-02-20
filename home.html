@@ -77,7 +77,7 @@
                 <img src="./assets/opt-5.png" alt="">
                 <p>Pay Bill</p>
             </button>
-            <button class="btn btn-primary btn-soft flex-col h-full py-4">
+            <button onclick="showOnly('history')" class="btn btn-primary btn-soft flex-col h-full py-4">
                 <img src="./assets/opt-6.png" alt="">
                 <p>Transactions</p>
             </button>
@@ -113,8 +113,8 @@
 
                     <br>
                     <label class="label text-neutral font-bold">Pin Number</label>
-                    <input id="add-money-pin" type="password" maxlength="4" class="input bg-base-200 rounded-full w-full"
-                        placeholder="Enter 4 Digit Pin Number" />
+                    <input id="add-money-pin" type="password" maxlength="4"
+                        class="input bg-base-200 rounded-full w-full" placeholder="Enter 4 Digit Pin Number" />
                     <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full">Add Money</button>
                 </fieldset>
             </div>
@@ -144,6 +144,15 @@
                 </fieldset>
             </div>
         </div>
+    </section>
+
+    <!-- transaction history -->
+    <section id="history" class="w-11/12 mx-auto py-5 hidden">
+        <h2 class="text-2xl font-bold mb-5">Transaction</h2>
+        <div class="space-y-5" id="history-container">
+
+        </div>
+
     </section>
 
     <script src="./script/machine.js"></script>
