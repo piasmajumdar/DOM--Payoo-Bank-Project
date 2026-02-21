@@ -28,12 +28,18 @@ function showOnly(id){
     const addMoney = document.getElementById("add-money");
     const cashout = document.getElementById("cashout");
     const history = document.getElementById("history");
+    const transfer = document.getElementById("transfer");
+    const bonus = document.getElementById("bonus");
+    const payBill = document.getElementById("pay-bill");
     // console.log(`add money - ${addMoney}, Cashout - ${cashout}`)
 
     //sobai k hide kore dao
     addMoney.classList.add("hidden");
     cashout.classList.add("hidden");
     history.classList.add("hidden");
+    transfer.classList.add("hidden");
+    bonus.classList.add("hidden");
+    payBill.classList.add("hidden");
 
     //id wala element k show korao
     const selected = document.getElementById(id);
